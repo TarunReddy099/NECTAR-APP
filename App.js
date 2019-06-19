@@ -6,7 +6,7 @@
  * @flow
  */
 import React, {Component} from 'react';
-import {Button, StyleSheet, Text, View,TouchableHighlight} from 'react-native';
+import {StyleSheet, Text, View,TouchableHighlight} from 'react-native';
 
 
 type Props = {};

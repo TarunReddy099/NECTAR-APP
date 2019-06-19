@@ -5,81 +5,66 @@
  * @format
  * @flow
  */
-
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, TextInput, StyleSheet} from 'react-native';
+import {Button, StyleSheet, Text, View,TouchableHighlight} from 'react-native';
 
 
 type Props = {};
 export default class App extends Component<Props> {
-    state = {
-        email: '',
-        password: ''
-    }
-    handleEmail = (text) => {
-        this.setState({ email: text })
-    }
-    handlePassword = (text) => {
-        this.setState({ password: text })
-    }
-    login = (email, pass) => {
-        alert('email: ' + email + ' password: ' + pass)
-    }
-
     render() {
         return (
-            <View style = {styles.container}>
-                <TextInput style = {styles.input}
-                           underlineColorAndroid = "transparent"
-                           placeholder = "Email"
-                           placeholderTextColor = "#9a73ef"
-                           autoCapitalize = "none"
-                           onChangeText = {this.handleEmail}/>
+            <View style={styles.container}>
+                <Text style={styles.welcome}> WELCOME TO NECTAR </Text>
+                <Text style={styles.instructions}> LETS SAVE THE MOTHER EARTH</Text>
 
-                <TextInput style = {styles.input}
-                           underlineColorAndroid = "transparent"
-                           placeholder = "Password"
-                           placeholderTextColor = "#9a73ef"
-                           autoCapitalize = "none"
-                           onChangeText = {this.handlePassword}/>
 
-                <TouchableOpacity
-                    style = {styles.submitButton}
-                    onPress = {
-                        () => this.login(this.state.email, this.state.password)
-                    }>
-                    <Text style = {styles.submitButtonText}> Submit </Text>
-                </TouchableOpacity>
+                <TouchableHighlight style={[styles.buttonContainer, styles.Bbutton]} onPress={() => this.onClickListener('sign_up')}>
+                    <Text style={styles.signUpText}>BUY</Text>
+                </TouchableHighlight>
+
+                <TouchableHighlight style={[styles.buttonContainer, styles.Bbutton]} onPress={() => this.onClickListener('sign_up')}>
+                    <Text style={styles.signUpText}>DONATE</Text>
+                </TouchableHighlight>
+
+
             </View>
         );
     }
 }
+
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 23
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#00b5ec',
     },
-    input: {
-        margin: 15,
-        height: 40,
-        borderColor: '#7a42f4',
-        borderWidth: 1
+    welcome: {
+        fontSize: 40,
+        textAlign: 'center',
+        margin: 10,
+        color : 'white',
     },
-    submitButton: {
-        backgroundColor: '#7a42f4',
-        padding: 10,
-        margin: 15,
-        height: 40,
-    },
-    submitButtonText:{
-        color: 'white'
-    },
-
     instructions: {
         textAlign: 'center',
         fontSize: 20,
-        color: '#333333',
+        color: 'white',
         marginBottom: 5,
     },
+    buttonContainer: {
+        height:45,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:20,
+        width:190,
+        borderRadius:30,
+    },
+    Bbutton: {
+        backgroundColor: "#FF4DFF",
+    },
+    signUpText: {
+        fontSize:20,
+        color: 'white',
+    }
 });
-
-

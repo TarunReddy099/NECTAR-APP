@@ -10,7 +10,7 @@ import {
     Alert
 } from 'react-native';
 
-export default class SignUpView extends Component {
+export default class login extends Component {
 
     constructor(props) {
         super(props);

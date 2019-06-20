@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {View, Text, TouchableHighlight, StyleSheet} from 'react-native';
 import DropdownMenu from 'react-native-dropdown-menu';
 
-export default class Demo extends Component {
+export default class donate extends Component {
 
     constructor(props) {
         super(props);

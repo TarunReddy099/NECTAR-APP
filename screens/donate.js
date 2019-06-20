@@ -11,7 +11,7 @@ export default class Demo extends Component {
         };
     }
 
-    render() {5
+    render() {
         var data = [["cotton", "woolen", "silk", "synthetic"], ["1 pair", "2 pair","3 pairs","4 pairs","Bulk"], ["good condition", "average condition","bad condition"]];
         return (
             <View style={styles.container}>

@@ -7,8 +7,8 @@ export default class thanks extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}> HI TARUN REDDY</Text>
-                <Text style={styles.instructions}>choose an option to save the mother earth</Text>
+                <Text style={styles.welcome}> TARUN REDDY</Text>
+                <Text style={styles.instructions}>Thanks for saving the mother earth</Text>
                 <Button
                     onPress = {handlePress={ }}
                     title = "HOME"

@@ -7,9 +7,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "i": "^0.3.6",
+    "native-base": "latest",
+    "npm": "^6.9.0",
     "react": "16.8.3",
     "react-native": "0.59.9",
-    "react-native-paper": "^2.16.0"
+    "react-native-elements": "latest",
+    "react-native-image-gallery": "^2.1.5",
+    "react-native-material-design": "^0.3.7",
+    "react-native-paper": "^2.16.0",
+    "react-native-router-flux": "^4.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

@@ -34,7 +34,7 @@ class address extends Component {
                            backgroundColor = "white"
                            autoCapitalize = "none"
                            onChangeText = {this.handlePassword}/>
-                <Text >                         IF YOU ARE A STUDENT       </Text>
+                <Text >      IF YOU ARE A STUDENT       </Text>
                 <TextInput style = {styles.input}
                            underlineColorAndroid = "transparent"
                            placeholder = "COLLEGE/SCHOOL NAME"

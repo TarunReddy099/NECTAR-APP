@@ -9,7 +9,6 @@
   "dependencies": {
     "i": "^0.3.6",
     "native-base": "latest",
-    "npm": "^6.9.0",
     "react": "16.8.3",
     "react-native": "0.59.9",
     "react-native-button": "^2.4.0",
